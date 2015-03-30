@@ -5,7 +5,10 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"barryvdh/laravel-ide-helper": "1.11.x-dev",
+		"way/generators": "2.6.1",
+		"fzaninotto/faker": "1.5.x-dev" 
 	},
 	"autoload": {
 		"classmap": [
@@ -24,6 +27,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+			 "php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
