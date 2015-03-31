@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@showWelcome');
+Route::get('/{slug}.html', function ($slug){
+    return $slug;
+})->where('slug', '(about|blog|contact|services)');
