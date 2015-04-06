@@ -1,25 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Services | Nova</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<script src="js/jquery.min.js"></script>
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-</script>
-</head>
-<body>
-@include('layouts.partials.header')
-<div class="about">
-  <div class="container">
-    <section class="title-section">
-      <h1 class="title-header">Our Premium Services</h1>
-    </section>
-  </div>
-</div>
+@extends('layouts.services')
+
+@section('content')
+
 <div class="container">
   <div class="row">
     <div class="col-md-4 service_box"><i class="fa fa-cog fa-3x pull-left"></i>
@@ -50,8 +32,61 @@
       <a href="#" class="about_btn">More info</a></div>
   </div>
 </div>
+@stop
+
+@section('dashboard')
 <div class="main">
-@include('layouts.partials.footer')
-@include('layouts.partials.scripts')
-</body>
-</html>
+	<div class="container">
+	  <div class="content_white">
+		<h2>Vel ad aliquid copiosae</h2>
+		<p>No cum agam appareat vituperata ateum iusto paulo dignissim</p>
+	  </div>
+	  <div class="testimonial">
+		<div class="row testimonial_top">
+		  <div class="col-md-6">
+			<ul class="test_box">
+			  <li class="test_img"><img src="thema/images/pic1.jpg" class="img-responsive" alt=""/> </li>
+			  <li class="test_desc">
+				<h4><a href="#">Impetus tincidunt</a></h4>
+				<p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+			  </li>
+			  <div class="clearfix"> </div>
+			</ul>
+		  </div>
+		  <div class="col-md-6">
+			<ul class="test_box">
+			  <li class="test_img"><img src="thema/images/pic2.jpg" class="img-responsive" alt=""/> </li>
+			  <li class="test_desc">
+				<h4><a href="#">Paulo dignissim</a></h4>
+				<p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+			  </li>
+			  <div class="clearfix"> </div>
+			</ul>
+		  </div>
+		</div>
+		<div class="row testimonial_bottom">
+		  <div class="col-md-6">
+			<ul class="test_box">
+			  <li class="test_img"><img src="thema/images/pic3.jpg" class="img-responsive" alt=""/> </li>
+			  <li class="test_desc">
+				<h4><a href="#">Vituperata ateum</a></h4>
+				<p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+			  </li>
+			  <div class="clearfix"> </div>
+			</ul>
+		  </div>
+		  <div class="col-md-6">
+			<ul class="test_box">
+			  <li class="test_img"><img src="thema/images/pic4.jpg" class="img-responsive" alt=""/> </li>
+			  <li class="test_desc">
+				<h4><a href="#">Appareat vituperat</a></h4>
+				<p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+			  </li>
+			  <div class="clearfix"> </div>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  </div>
+</div>
+@stop

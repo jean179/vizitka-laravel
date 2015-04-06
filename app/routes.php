@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController@showWelcome');
+Route::get('index.html', 'HomeController@showWelcome');
+
 Route::get('/{slug}.html', function ($slug){
-    return $slug;
-})->where('slug', '(about|blog|contact|services)');
+	$title     = 'Заголовок страницы';
+	$longtitle = 'Заголовок страницы';
+    return View::make('pages.'.$slug, compact('longtitle', 'title'));
+})->where('slug', '(about|contact|services)');
+
+Route::get('/blog', function() {
+	return 'Здесь будут новости компании';
+});
