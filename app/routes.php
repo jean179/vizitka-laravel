@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('index.html', 'HomeController@showWelcome');
+Route::get('/', 'HomeController@showWelcome');
 
 Route::get('/{slug}.html', function ($slug){
 	$title     = 'Заголовок страницы';

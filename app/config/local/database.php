@@ -23,9 +23,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => '127.0.0.1',
-			'database'  => 'root',
-			'username'  => '',
-			'password'  => 'secret',
+			'database'  => 'vizitka-laravel.dev',
+			'username'  => 'mysql',
+			'password'  => 'mysql',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
